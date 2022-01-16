@@ -5,9 +5,15 @@
   "author": "Ricardo M. <lordrip@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start:backend": "yarn workspace backend run dev",
-    "start:frontend": "yarn workspace frontend run dev"
+    "backend:start": "yarn workspace backend run dev",
+    "frontend:start": "yarn workspace frontend run dev",
+    "format": "yarn workspace backend format && yarn workspace frontend format"
   },
   "private": true,
-  "workspaces": ["backend", "frontend"]
+  "workspaces": ["backend", "frontend"],
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2"
+  }
 }

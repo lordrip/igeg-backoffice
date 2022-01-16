@@ -5,7 +5,8 @@
     "serve": "vite preview",
     "build": "vite build",
     "dev": "vite",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.ts\""
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
@@ -25,6 +26,9 @@
     "vite": "^2.7.2",
     "vue-cli-plugin-vuetify": "~2.4.5",
     "vue-tsc": "^0.29.8",
-    "vuetify-loader": "^2.0.0-alpha.0"
+    "vuetify-loader": "^2.0.0-alpha.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2"
   }
 }
