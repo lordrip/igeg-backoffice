@@ -14,7 +14,7 @@ import { UpdateCustomerDto } from './dto/update-customer.dto';
 
 @Controller(Routes.Customers)
 export class CustomersController {
-  constructor(private readonly customersService: CustomersService) {}
+  constructor(private readonly customersService: CustomersService) { }
 
   @Post()
   create(@Body() createCustomerDto: CreateCustomerDto) {

@@ -1,4 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Intervention } from 'src/services/entities/Intervention.entity';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Customer {
@@ -22,4 +23,7 @@ export class Customer {
 
   @Column({ default: true })
   isActive: boolean;
+
+  @OneToMany((type) => Intervention, (intervention) => intervention.customerId)
+  interventions: Intervention[];
 }

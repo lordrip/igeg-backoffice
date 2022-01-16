@@ -1,0 +1,11 @@
+{
+  "prettier.configPath": ".prettierrc",
+  "prettier.documentSelectors": [
+    "*.ts"
+  ],
+  "prettier.enableDebugLogs": true,
+  "prettier.endOfLine": "crlf",
+  "prettier.prettierPath": "node_modules/prettier",
+  "prettier.printWidth": 120,
+  "editor.formatOnSave": true
+}
